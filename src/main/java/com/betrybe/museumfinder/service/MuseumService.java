@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class MuseumService implements MuseumServiceInterface {
-  private MuseumFakeDatabase museumFakeDatabase;
+  private final MuseumFakeDatabase museumFakeDatabase;
 
   @Autowired
   public MuseumService(MuseumFakeDatabase museumFakeDatabase) {
